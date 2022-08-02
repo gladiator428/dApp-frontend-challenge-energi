@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ onThemeClick }) => {
     <HeaderWrapper>
       {menuData.map((item, key) => (
         <MenuLink
-          active={item.path === location.pathname}
+          active={item.path === location.pathname ? 1 : 0}
           to={`${item.path}`}
           key={key}
         >

@@ -6,6 +6,7 @@ export const lightTheme = {
   background: "#363537",
   headerShadow: "#888",
   menuActive: "#00ab58",
+  tableBorder: "#aaa",
 };
 export const darkTheme = {
   body: "#141619",
@@ -15,4 +16,5 @@ export const darkTheme = {
   background: "#999",
   headerShadow: "#000",
   menuActive: "#00e676",
+  tableBorder: "#444",
 };
