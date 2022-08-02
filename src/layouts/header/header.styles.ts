@@ -17,7 +17,7 @@ export const ThemeToggle = styled.div`
   cursor: pointer;
 `;
 
-export const MenuLink = styled(Link)<{ active?: boolean }>`
+export const MenuLink = styled(Link)<{ active?: number }>`
   position: relative;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ export const MenuLink = styled(Link)<{ active?: boolean }>`
   transition: all 0.3s;
   ::after {
     content: "";
-    height: 3px;
+    height: 4px;
     width: 100%;
     position: absolute;
     background-color: ${({ theme, active }) =>
