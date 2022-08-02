@@ -1,7 +1,10 @@
 import React from "react";
 
+// Import Styled Components
+import { HomeContainer } from "./home.styles";
+
 const Home: React.FC = () => {
-  return <div>Home</div>;
+  return <HomeContainer>Home</HomeContainer>;
 };
 
 export default Home;

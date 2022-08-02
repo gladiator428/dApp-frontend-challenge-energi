@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Import Layouts Components
 import Header from "./header";
@@ -16,13 +16,13 @@ import { useDarkMode } from "hooks/useDarkMode";
 
 const AppLayout: React.FC = ({ children }) => {
   const [theme, themeToggler] = useDarkMode();
-
   const themeMode = theme === "light" ? lightTheme : darkTheme;
+
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <AppLayoutWrapper>
-        <Header onThemeClick={themeToggler} />
+        <Header theme={theme} onThemeClick={themeToggler} />
         <AppContainer>{children}</AppContainer>
       </AppLayoutWrapper>
     </ThemeProvider>
