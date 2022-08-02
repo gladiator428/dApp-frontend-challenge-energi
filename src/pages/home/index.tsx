@@ -2,6 +2,7 @@ import axios from "axios";
 import Table from "components/Table";
 import { api_url } from "constant/endpoint";
 import React, { useEffect, useState } from "react";
+import { formatNumber } from "utils/formatNumber";
 
 // Import Styled Components
 import { HomeContainer } from "./home.styles";
@@ -30,10 +31,7 @@ const Home: React.FC = () => {
           id: key + 1,
           name: item.name,
           symbol: item.symbol,
-          price: item.last_price
-            .toFixed(2)
-            .toString()
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+          price: formatNumber(item.last_price),
         });
       });
 
