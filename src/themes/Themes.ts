@@ -7,6 +7,7 @@ export const lightTheme = {
   headerShadow: "#888",
   menuActive: "#00ab58",
   tableBorder: "#aaa",
+  cardBg: "#fff",
 };
 export const darkTheme = {
   body: "#141619",
@@ -17,4 +18,5 @@ export const darkTheme = {
   headerShadow: "#000",
   menuActive: "#00e676",
   tableBorder: "#444",
+  cardBg: "#1a2024",
 };
